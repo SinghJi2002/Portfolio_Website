@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c51e7d2e6c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="navigation">
+            <img src="assets/images/logo.png" alt="">
+            <ul>
+                <li><a href="#header">Home</li></a>
+                <li><a href="#about">About</li></a>
+                <li><a href="#services">Services</li></a>
+                <li><a href="#portfolio">Projects</li></a>
+                <li><a href="#contact">Contact Us</li></a>
+            </ul>
+        </div>
+        <div class="media">
+            <div class="header-text">
+                <p>ML Engineer || FrontEnd Developer || Data Scientist</p>
+                <h1>Hii!! I am <span class="name">Ashutosh Kumar Singh</span><br>from India </h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="about" id="about">
+        <div class="container">
+            <div class="left">
+                <img src="assets/images/about.png" alt="about" class="about">
+            </div>
+            <div class="right">
+                <div class="title">
+                    <h1>About Me</h1>
+                </div>
+                <div class="subtitle">
+                    Brings technical expertise in deep learning, machine learning, deep reinforcement, and computer
+                    vision. Can also handle front end development and analytics. Known for effective communication,
+                    interpersonal skills, and a proactive, independent work approach. Offers a unique blend of
+                    administrative acumen and a tech-savvy mindset, ensuring optimal support in dynamic work
+                    environments.
+                </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-content active-tab" id="skill">
+                    <ul>
+                        <li><span>Machine Learning</span><br>Designing Predictive Models</li>
+                        <li><span>Data Science</span><br>Analysing and gaining insights from data</li>
+                        <li><span>FrontEnd Web Developer</span><br>Design Web Sites</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="experience">
+                    <ul>
+                        <li><span>Machine Learning Intern</span><br>IoT Labs,KIIT</li>
+                        <li><span>Finance Intern</span><br>Kraya&Kuber,KIIT</li>
+                        <li><span>Content Writer</span><br>Khwaab,KIIT</li>
+                        <li><span>AI Trainee</span><br>Intel</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>Primary Schooling(96.8%)</span><br>Jusco School South Park</li>
+                        <li><span>High Schooling(92.8%)</span><br>DAV Public School</li>
+                        <li><span>Bachelor's Degree(Pursueing)(CGPA-8.9)</span><br>Kalinga Institute Of Industrial
+                            Technology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Machine Learning</h2>
+                    <p>
+                        As a Machine Learning Engineer, I specialize in creating predictive models and data-driven
+                        solutions to solve complex business problems. I have extensive experience in developing and
+                        deploying machine learning algorithms, including deep learning and natural language processing
+                        models, using state-of-the-art tools and frameworks. By leveraging large datasets and advanced
+                        analytical techniques, I help businesses gain actionable insights and drive strategic
+                        decision-making.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Data Science</h2>
+                    <p>
+                        As a Data Scientist, I transform raw data into meaningful insights that empower businesses to
+                        make data-driven decisions. My expertise lies in statistical analysis, data visualization, and
+                        machine learning, which I utilize to uncover trends, patterns, and relationships within data. By
+                        applying advanced analytical techniques and leveraging powerful tools like Python and R, I
+                        provide actionable recommendations and predictive models that drive business growth and
+                        efficiency.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front End Developer</h2>
+                    <p>
+                        As a Frontend Developer, I design and implement user-friendly interfaces that enhance the user
+                        experience and engagement. With proficiency in HTML, CSS, JavaScript, and modern frameworks like
+                        React and Vue.js, I build responsive and interactive web applications that perform seamlessly
+                        across devices. My focus is on creating visually appealing and intuitive designs that not only
+                        meet the client's requirements but also provide an exceptional user journey.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/images/project1.png" class="work-images">
+                    <div class="layer">
+                        <h3>Violence Detection Using ML</h3>
+                        <p>
+                            The model takes videos as an input, it analyses those videos, and monitors the occurrence of
+                            any violent action. It can be used for realtime use cases too.
+                        </p>
+                        <a
+                            href="https://github.com/SinghJi2002/Projects/tree/dbe329265c419cdbac15aa1e632a5c6007be8bb4/Real%20Time%20Violence%20Detection"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project2.png" class="work-images">
+                    <div class="layer">
+                        <h3>Telemedicine Recommendation System</h3>
+                        <p>
+                            This is an user interactive model. It takes input from the user, where user can write all
+                            possible problems he/she is facing. This then predicts a list of possible diseases the user
+                            might be suffering. It further suggests medicines and lifestyle precaution to be followed
+                        </p>
+                        <a
+                            href="https://github.com/SinghJi2002/Projects/tree/2941d5076710860cdeb70183e6738425d898ea13/Telemedicine%20Recommendation%20System"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project3.png" class="work-images">
+                    <div class="layer">
+                        <h3>Intel Sentiment Analysis using RNN</h3>
+                        <p>
+                            The model recieves live feed from the camera of the user where it detects the hand or facial
+                            gestures shown by the user in realtime.
+                        </p>
+                        <a href="https://sentiment-analyser-int.streamlit.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="work-list2">
+                <div class="work">
+                    <img src="assets/images/project4.png" class="work-images">
+                    <div class="layer">
+                        <h3>Streaming Service Clone</h3>
+                        <p>
+                            We have developed clone of streaming servive gaint Netflix's login page.
+                        </p>
+                        <a
+                            href="https://github.com/SinghJi2002/Projects/tree/46e69342866f6039a64295e3e49f7968366b25f6/Project_Netflix"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project5.jpg" class="work-images">
+                    <div class="layer">
+                        <h3>Music Player App</h3>
+                        <p>
+                            In this project we have build a music player whose UI is Inspired from Spotify. In this app,
+                            We can play/pause music, Seek music, Adjust Music volume, Load music from local storage,
+                            save as favourite and many more.
+                        </p>
+                        <a
+                            href="https://github.com/SinghJi2002/FrontEnd-Development/tree/efbad8082976440aab6fcbf0f0f535da11e5b52d/Project%20Spotify"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project6.png" class="work-images">
+                    <div class="layer">
+                        <h3>Social Media Clone</h3>
+                        <p>
+                            In this project, we have made a social media application very similar to that of twitter/X,
+                            UI and functionality.
+                        </p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="work-list3">
+                <div class="work">
+                    <img src="assets/images/project7.jpg" class="work-images">
+                    <div class="layer">
+                        <h3>Youtube Clone</h3>
+                        <p>
+                            In this project we have cloned Youtube UI and have build the application from scratch
+                            ourselves.
+                        </p>
+                        <a
+                            href="https://github.com/SinghJi2002/FrontEnd-Development/tree/efbad8082976440aab6fcbf0f0f535da11e5b52d/Project_Youtube"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project8.jpg" class="work-images">
+                    <div class="layer">
+                        <h3>Flower Image Classifier Using CNN</h3>
+                        <p>
+                            We build a CNN that can take images of flower and classify them into 5 classes, namely
+                            daisy, dandelion, roses, tulips and sunflower.
+                        </p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project9.png" class="work-images">
+                    <div class="layer">
+                        <h3>Digit Classification System Using CNN</h3>
+                        <p>
+                            Here we have used CNN to implement a system that takes in images of any digit, and predicts
+                            which digit it actually is.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-list4">
+                <div class="work">
+                    <img src="assets/images/project10.jpg" class="work-images">
+                    <div class="layer">
+                        <h3>Image Compression Model</h3>
+                        <p>
+                            This model takes in image, and returns a compressed version of it. This compression is
+                            lossy.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project11.jpg" class="work-images">
+                    <div class="layer">
+                        <h3>Movie Recommendation System-Collaborative</h3>
+                        <p>
+                            This is a movie recommendation system based on Collaborative filtering Recommendation
+                            System.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project11.jpg" class="work-images">
+                    <div class="layer">
+                        <h3>Movie Recommendation System-Content</h3>
+                        <p>
+                            This is a movie recommendation system based on Content based filtering Recommendation
+                            System.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-list5">
+                <div class="work">
+                    <img src="assets/images/project13.jpeg" class="work-images">
+                    <div class="layer">
+                        <h3>Tribute Website</h3>
+                        <p>
+                            Here we have designed a tribute page, giving homage to Dr. Norman Borlaug, the hero post
+                            second world war.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project15.jpg" class="work-images">
+                    <div class="layer">
+                        <h3>Techical Documentation Page</h3>
+                        <p>
+                            Here we have designed a technical documentation page, giving technical documentation of
+                            JavaScript language.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project14.jpg" class="work-images">
+                    <div class="layer">
+                        <h3>Product Landing Page</h3>
+                        <p>
+                            Here we have designed a Product landing page.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-list6">
+                <div class="work">
+                    <img src="assets/images/project16.webp" class="work-images">
+                    <div class="layer">
+                        <h3>To-Do List App</h3>
+                        <p>
+                            Here we have designed a to-do list application, that provides all possible applications you
+                            may desire.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project17.jpg" class="work-images">
+                    <div class="layer">
+                        <h3>Pandas Data Analytics: American League</h3>
+                        <p>
+                            In this project, we were supposed to find the win/loss ratios' correlation to that of a
+                            city's population. In this we have used the data of US cities and sports teams based in
+                            these US cities in legues such as the NFL, NHL, NBA and MLB. I used python and python's
+                            library Pandas to intially, clean and preprocess data. Then it was used to statistically
+                            established relation between how successful a club/franchise is and how does the demography
+                            of where the club/franchise is based has played a role in its success or failure.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project18.jpg" class="work-images">
+                    <div class="layer">
+                        <h3>Data Visualisation And Analytics: Netflix </h3>
+                        <p>
+                            In these project we have analysed and visualised Netflix sales data for the year 2020-21.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-list7">
+                <div class="work">
+                    <img src="assets/images/project19.jpg" class="work-images">
+                    <div class="layer">
+                        <h3>Data Visualisation And Analytics: Climate Change</h3>
+                        <p>
+                            In these project we have analysed and visualised trends of climate for the years 2005-2015.
+                            Further we have visualised and highlighted instances that are breaking this trend.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project20.jpg" class="work-images">
+                    <div class="layer">
+                        <h3>Anomaly Detection Model</h3>
+                        <p>
+                            Developed an advanced machine learning model to detect anomalies in computer grid,
+                            effectively identifying outliers and unusual patterns. This project improves data integrity
+                            and aids in predictive maintenance by catching irregularities early.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project21.jpg" class="work-images">
+                    <div class="layer">
+                        <h3>Crime Density Prediction</h3>
+                        <p>
+                            Created a predictive model that forecasts crime density in urban areas using historical
+                            crime data and socio-economic factors. This tool helps law enforcement agencies allocate
+                            resources more efficiently and enhances community safety by anticipating high-risk zones.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-list8">
+                <div class="work">
+                    <img src="assets/images/project22.gif" class="work-images">
+                    <div class="layer">
+                        <h3>Car Monitering and Counting System</h3>
+                        <p>
+                            Developed a computer vision model to accurately monitor and count vehicles in real-time,
+                            providing valuable data for traffic management and urban planning. This project enhances
+                            road safety and helps optimize traffic flow.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project23.png" class="work-images">
+                    <div class="layer">
+                        <h3>Human Monitering and Counting System</h3>
+                        <p>
+                            Created an AI-driven system to monitor and count people in various environments, such as
+                            public spaces and events. This model aids in crowd management, security, and resource
+                            allocation by providing accurate real-time data.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/project24.jpg" class="work-images">
+                    <div class="layer">
+                        <h3>PPE Safety Set Detection and Monitering Model</h3>
+                        <p>
+                            Developed an AI-based model to detect and monitor Personal Protective Equipment (PPE)
+                            compliance in real-time. This project enhances workplace safety by ensuring adherence to
+                            safety standards and reducing the risk of accidents.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-information">
+                    <h1 class="title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>ashutoshkumarsingh2002@outlook.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8825161086</p>
+                    <div class="social-icons">
+                        <span><a href=""><i class="fa-brands fa-instagram"></i>__Singh_Ji__</a></span>
+                        <span><a href=""><span><i class="fa-brands fa-x-twitter"></i>___Singh_Ji____</a></span>
+                        <span><a href=""><span><i class="fa-brands fa-hashnode"></i>SinghJi2002</a></span>
+                        <span><a href=""><span><i class="fa-brands fa-linkedin"></i>Ashutosh Kumar Singh</a></span>
+                        <span><a href=""><span><i class="fa-solid fa-terminal"></i>A_K_S_2002</a></span>
+                    </div>
+                    <a href="C:\Users\ashut\Downloads\_Resume_Ashutosh_Kumar_Singh_" download
+                        class="button downloadcv">Download CV</a>
+                </div>
+                <form action="" class="contact-form">
+                    <input type="text" class="Name" placeholder="Your Name" required>
+                    <input type="text" class="email" placeholder="Your Email" required>
+                    <textarea class="Message" placeholder="Your Messages"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <p class="copyright">
+        Copyright <i class="fa-solid fa-copyright"></i> Ashutosh. Made with <i class="fa-solid fa-heart heart"></i>
+    </p>
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-content")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")//event is attached to onclick. so whichever active-link is clicked, this function add active-tab to class list of that tag.
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+
+</html>
