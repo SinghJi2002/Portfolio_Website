@@ -34,15 +34,35 @@ body{
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    column-gap: 15px ;
+    column-gap: 8px ;
     text-decoration: none;
 }
 .navigation ul li a{
     color: white;
     text-decoration: none;
-    font-size: 18px;
     position: relative;
 }
+/* Adjust font size for tablets (width up to 1024px) */
+@media screen and (max-width: 1024px) {
+    .navigation ul li a {
+        font-size: 25px;
+    }
+}
+
+/* Adjust font size for smartphones (width up to 768px) */
+@media screen and (max-width: 768px) {
+    .navigation ul li a {
+        font-size: 14px;
+    }
+}
+
+/* Adjust font size for very small screens (width up to 480px) */
+@media screen and (max-width: 480px) {
+    .navigation ul li a {
+        font-size: 12px;
+    }
+}
+
 .navigation ul li a::after{
     content: '';
     width: 0px;
