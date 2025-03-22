@@ -378,9 +378,10 @@ body{
     border: none;
     height: 40px;
     border-radius: 5px;
+    color: white;
 }
 .contact-form .Name::placeholder{
-    padding-left: 10px;
+    padding: 10px;
 }
 .contact-form .email{
     background-color: rgba(209, 203, 203, 0.199);
@@ -388,6 +389,7 @@ body{
     border: none;
     height: 40px;
     border-radius: 5px;
+    color: white;
 }
 .contact-form .email::placeholder{
     padding-left: 10px;
@@ -398,6 +400,7 @@ body{
     border: none;
     height: 130px;
     border-radius: 5px;
+    color: white;
 }
 .contact-form .Message::placeholder{
     padding-left: 10px;
@@ -423,5 +426,8 @@ body{
 }
 .copyright .heart{
     color: red;
+}
+.send-message{
+    cursor: pointer;
 }
 
